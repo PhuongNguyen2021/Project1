@@ -18,6 +18,20 @@
 	<meta name="twitter:image" content="https://myclone.page/og-image-color-logo.png"/>
 	<link rel="shortcut icon" href="/favicon.ico"/>
 
+	<!-- Carousel additional files
+	============================================= -->
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <title>Flex Thumbnail</title> -->
+    <meta name="description" content="">
+    <!-- <meta name="viewport" content="width=550, initial-scale=1"> -->
+    <link rel="stylesheet" href="dist/jquery.flipster.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+    <script src="dist/jquery.min.js"></script>
+    <script src="dist/jquery.flipster.min.js"></script>
+	
+
 	<!-- Stylesheets
 	============================================= -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
@@ -27,18 +41,35 @@
 	<link rel="stylesheet" href="assets/css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="assets/css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" />
+
 	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
-	<script type="text/javascript" src="engine1/jquery.js"></script>
+	
 	<link rel="stylesheet" href="assets/css/custom.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<!-- Document Title
 	============================================= -->
 	<title>3-D Art | ethanAart</title>
+
 <style>
-.side-header #logo img {
-    height: auto !important;
-}
+	.side-header #logo img {
+		height: auto !important;
+	}
+
+	ul li {
+		width:14%;
+		height: auto;
+	}
+	#flat ul li img {
+		border: 7px solid rgb(54, 202, 202);
+	}
+	#bigPicture {
+		width: 100%;
+		height: auto;
+	}
+	#flat .active {
+		border: 10px solid rgb(6, 172, 172);
+	}
 </style>
 <meta name="robots" content="noindex, nofollow"><!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115943728-1"></script>
@@ -106,27 +137,23 @@ gtag('config', 'UA-115943728-1');
 								<li class="menu-item"><a class="menu-link" href="3dart.html"><div>3-D Art</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="#"><div>About Ethan</div></a>
 									<ul class="sub-menu-container">
-												
-												
-												<li class="menu-item"><a class="menu-link" href="ethaninaction.html"><div>Ethan In Action</div></a></li>
-												<li class="menu-item"><a class="menu-link" href="ethanentersmidteens.html"><div>Ethan Enters Mid-Teens</div></a></li>
-												<li class="menu-item"><a class="menu-link" href="aboutethan.html"><div>Young Ethan</div></a></li>	</ul>
-												
+										<li class="menu-item"><a class="menu-link" href="ethaninaction.html"><div>Ethan In Action</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="ethanentersmidteens.html"><div>Ethan Enters Mid-Teens</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="aboutethan.html"><div>Young Ethan</div></a></li>	
+									</ul>
 								</li>
 								<li class="menu-item"><a class="menu-link" href="abstract.html"><div>Abstract</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="accolades.html"><div>Accolades</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="airplanes.html"><div>Airplanes</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="#"><div>Animal, Nature & Planets</div></a>
 									<ul class="sub-menu-container">
-												<li class="menu-item"><a class="menu-link" href="animalkingdom.html"><div>Animal Kingdom</div></a></li>
-												<li class="menu-item"><a class="menu-link" href="animalsnatureplanets.html"><div>Animals, Nature & Planets</div></a></li>
-												<li class="menu-item"><a class="menu-link" href="dogs-in-flight.html"><div>Dogs in Flight</div></a></li>
-												<li class="menu-item"><a class="menu-link" href="dog-planes.html"><div>Dog Planes</div></a></li>						
+										<li class="menu-item"><a class="menu-link" href="animalkingdom.html"><div>Animal Kingdom</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="animalsnatureplanets.html"><div>Animals, Nature & Planets</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="dogs-in-flight.html"><div>Dogs in Flight</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="dog-planes.html"><div>Dog Planes</div></a></li>
 									</ul>
 								</li>
 								<li class="menu-item"><a class="menu-link" href="artforsale.html"><div>Art for Sale</div></a></li>
-							
-								
 								<li class="menu-item"><a class="menu-link" href="charity.html"><div>Charity</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="commissioned.html"><div>Commissioned Art</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="animationprojects.html"><div>Early Animation Projects</div></a></li>
@@ -138,27 +165,29 @@ gtag('config', 'UA-115943728-1');
 								<li class="menu-item"><a class="menu-link" href="nicaraguatrip.html"><div>Nicaragua Trip</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="perspective.html"><div>Perspective</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="ethansphotoshops.html"><div>Photoshops</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#"><div>Pop Culture</div></a><ul class="sub-menu-container">
+								<li class="menu-item"><a class="menu-link" href="#"><div>Pop Culture</div></a>
+									<ul class="sub-menu-container">
 										<li class="menu-item"><a class="menu-link" href="#"><div>Despicable Me</div></a>
-												<ul class="sub-menu-container">
+											<ul class="sub-menu-container">
 												<li class="menu-item"><a class="menu-link" href="despicablemeanimation.html"><div>Despicable Me Animation</div></a></li>
 												<li class="menu-item"><a class="menu-link" href="despicablemecomics.html"><div>Despicable Me Comics	</div></a></li>
 												<li class="menu-item"><a class="menu-link" href="despicablemeideas.html"><div>Despicable Me Ideas</div></a></li>
 												<li class="menu-item"><a class="menu-link" href="despicablemestoryboards.html"><div>Despicable Me Story Boards</div></a></li>
-												
-									</ul></li>
-									<li class="menu-item"><a class="menu-link" href="familyguy.html"><div>Family Guy</div></a></li>	
-									<li class="menu-item"><a class="menu-link" href="hungergames.html"><div>Hunger Games</div></a></li>
-									<li class="menu-item"><a class="menu-link" href="powerboystory.html"><div>Power Boy Story</div></a></li>			
-												
-									</ul></li>
+											</ul>
+										</li>
+										<li class="menu-item"><a class="menu-link" href="familyguy.html"><div>Family Guy</div></a></li>	
+										<li class="menu-item"><a class="menu-link" href="hungergames.html"><div>Hunger Games</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="powerboystory.html"><div>Power Boy Story</div></a></li>	
+									</ul>
+								</li>
+								<li class="menu-item"><a class="menu-link" href="robots.html"><div>Robots</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="#"><div>Rock 'n Roll</div></a>
 									<ul class="sub-menu-container">
 												<li class="menu-item"><a class="menu-link" href="rocknroll.html"><div>Rock n' Roll</div></a></li>
 												<li class="menu-item"><a class="menu-link" href="linkinpark.html"><div>Linkin Park</div></a></li>
 									</ul>
 								</li>
-								
+								<li class="menu-item"><a class="menu-link" href="rollercoaster.html"><div>Rollercoaster</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="vistadelmarmuralwithbuffmonster.html"><div>Vista Del Mar With Buff Moster</div></a></li>
 							</ul>
 
@@ -194,7 +223,7 @@ gtag('config', 'UA-115943728-1');
 
         <!--Gallery goes here-->
 
-		<section id="content">
+		<section id="content" class="shadow p-3 mb-5 bg-white rounded">
 			<div class="content-wrap">
 				<div class="container clearfix">
 					<div class="row gutter-40 col-mb-80">
@@ -260,7 +289,7 @@ gtag('config', 'UA-115943728-1');
 			</div>
 		</section>
 
-		<section id="content">
+		<section id="content" class="shadow p-3 mb-5 bg-white rounded">
 			<div class="content-wrap">
 				<div class="container clearfix">
 					<div class="row gutter-40 col-mb-80">
@@ -268,7 +297,7 @@ gtag('config', 'UA-115943728-1');
 							<div id="posts" class="row grid-container gutter-30">
 								<div class="entry col-12">
 									<div class="grid-inner">
-										<h1>Dog Plane</h1>
+										<!-- <h1>Dog Plane</h1> -->
 										<!-- ARTICLE NO. 2 -->
 										<div class="col-md-12 p-3">
 											<div class="entry mb-1 clearfix">
@@ -286,11 +315,6 @@ gtag('config', 'UA-115943728-1');
 														<a class="grid-item" href="images/3da/754_dogplane4.jpg" data-lightbox="gallery-item" title="Dog Airlines front and overhead views | dogplane4">
 															<img src="images/3da/241_dogplane4.jpg" alt="241_dogplane4">
 														</a>
-
-											
-
-													
-
 													</div>
 												</div>
 											</div>
@@ -308,7 +332,147 @@ gtag('config', 'UA-115943728-1');
 			</div>
 		</section>
 
+		<!-- carousel section -->
+		<section class="shadow p-3 mb-5 bg-white rounded">
+			
+			<div class="container">
+				<br>
+				<h1>3-D Art</h1>
+				<br>
+				<div id="bigPicture" class="d-flex justify-content-center">
+					<img src="images/3da/carousel/754_3da0001.jpg">
+				</div>
+				<div id="flat" class="border-top-0">
+					<ul class="carousel">
+						<li>
+							<img src="images/3da/carousel/754_3da0001.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/565_r-3da0002.png">
+						</li>
+						<li>
+							<img src="images/3da/carousel/565_r-3da0003.png">
+						</li>
+						<li>
+							<img src="images/3da/carousel/754_3da0004.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/754_3da0005.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/754_3da0006.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/754_3da0007.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/754_3da0008.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/754_3da0009.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/754_3da0010.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/754_3da0011.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/565_3da0012.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/754_3da0013.jpeg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/565_3da0014.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/567_3da0015.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/565_r-3da0016.png">
+						</li>
+						<li>
+							<img src="images/3da/carousel/424_3da0017.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/424_3da0018.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/427_3da0019.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/428_3da0020.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/423_3da0021.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/287_3da0022.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/286_3da0023.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/287_3da0024.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/288_3da0025.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/754_3da0026.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/753_3da0027.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/754_3da0028.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/754_3da0029.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/565_dogplane3.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/754_3da0030.jpg">
+						</li>
+						<li>
+							<img src="images/3da/carousel/754_3da0032.jpg">
+						</li>
+		</section>
+		<script>
+			$(document).ready(function() {
+				var flat = $("#flat").flipster({
+				style: 'flat',
+				spacing: -0.2,
+				// start specifies the start index, default is 'center'
+				// start: 0,
+				// set loop to true for it to keep playing, default is false
+				loop: false,
+				});
+				// Can research flipster functions at https://github.com/drien/jquery-flipster/
+				// flat.flipster('play', 2000)
+				// flat.flipster('index')
 
+				// jQuery to remove, clone, and add images from the thumbnail as they are clicked
+				$("#flat img").click(function() {
+					if ($("#flat img").hasClass("active")) {
+						$("#flat img").removeClass("active");
+					}
+					var clone = $(this).clone();
+					if (clone) {
+						$(this).addClass("active");
+					}
+					if ($("#bigPicture").has("img")) {
+						$("#bigPicture img").remove();
+						clone.appendTo("#bigPicture")
+					}
+
+				})
+
+			})
+		</script>
       
 
 		<!-- Footer
@@ -347,13 +511,11 @@ gtag('config', 'UA-115943728-1');
 
     
     <!-- <script type="text/javascript" src="engine1/wowslider.js"></script> -->
-	<script type="text/javascript" src="engine1/script.js"></script>
+	<!-- <script type="text/javascript" src="engine1/script.js"></script> -->
 
     <script src="js/plugins.min.js"></script>
     
 	
-
-
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="assets/js/functions.js"></script>
